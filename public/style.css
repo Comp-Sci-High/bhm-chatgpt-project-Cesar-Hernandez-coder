@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://thedaily.case.edu/wp-content/uploads/2022/02/black-history-month-feat.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image Hover Effect */
+.card-img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card-img .hover-img {
+    opacity: 0;
+}
+
+.card-img:hover .hover-img {
+    opacity: 1;
+}
+
+.card-img:hover .default-img {
+    opacity: 0;
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for changing color, title, and animation */
+a:hover {
+    color: #ff5733; /* Change the color */
+    font-size: 24px; /* Slightly increase the font size */
+    transform: scale(1.1); /* Add a scaling animation */
+}
+
+a:hover::after {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+
+nav {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    background-color: black; 
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px; /* Adjust as needed */
+    margin-right: 20px; /* Space between logo and links */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
